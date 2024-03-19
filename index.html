@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="slider.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Slick Slider CSS and JavaScript from a CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        </script>
+</head>
+
+<body>
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <img src="img/logo.png" alt="" class="logo-img">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04"
+                aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor04">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><small>Find Doctors</small>
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><small>Video Consult</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><small> Lab Tests</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><small>Surgeries</small></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><small>Blog</small></a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li> -->
+                </ul>
+                <form class="d-flex" id="df">
+
+                    <button class="btn btn-secondary my-2 my-sm-0 nav-btnn" type="submit"
+                        style="background-color: white; color:#2B65AA;background: #fff;
+    border: 2px solid #2b65aa; border-radius: 4px; padding: 10px 15px !important;  box-shadow: inset 0 0 0 0 #2b65aa;  text-align: center; font-size: 15px; color: #2b65aa; text-transform: uppercase; font-weight: 500; -webkit-transition: all 0.5s; -moz-transition: all 0.5s;-o-transition: all 0.5s; transition: all 0.5s; margin-right: -40px;">Login
+                        / sign up</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+    <!-- banner start  -->
+    <section class="section section-search Cus_home_search">
+        <div class="container">
+            <div class="row banner-row">
+                <h1 class="banner-h1">
+                    Search Doctor, Make an Appointment
+                </h1>
+            </div>
+            <div class="row">
+                <p class="banner-h2">Discover the best doctors, clinics & hospitals in the nearest city to you</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form class="d-flex">
+                        <input class="form-control-1 me-sm-2" type="search" placeholder="Search Location">
+                    </form>
+                    <p class="banner-p1">Based on your Location</p>
+                </div>
+                <div class="col">
+                    <form class="d-flex">
+                        <input class="form-control-2 me-sm-2" type="search"
+                            placeholder="Search Doctor ,Specialities etc">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <p class="banner-p">Ex: Dental or Sugar Check-up etc.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- banner end  -->
+
+    <!-- card start  -->
+    <section class="looking-4">
+
+        <div class="container ">
+            <div class="row">
+                <h1 class="card-h1">What are you looking for ?</h1>
+            </div>
+            <div class="row" id="card-row">
+                <div class="col">
+                    <div class="card base-card">
+                        <img src="img/lab img.jpg" class="card-img" alt="...">
+                        <div class="card-body crd-body ">
+                            <p class="card-text">
+                                Consult Now</p>
+                            <form action="" class="form-btn">
+                                <button class="card-btn">Find Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/lab img.jpg" class="card-img" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Consult Now</p>
+                            <form action="" class="form-btn">
+                                <button class="card-btn">Find
+                                    Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- card end  -->
+
+    <!-- corosel start  -->
+
+    <section class="OurSpecialities ">
+        <div class="container">
+            <div class="special-h">
+                Our Specialities</div>
+            <div class="row">
+                <div class="wrapper text-align:center">
+                    <div class="carousel">
+                        <div class="text-align:center" style="width: 100%;"><img class="Slid" src="img/c3.svg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">CT scan</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/c1.webp"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Surgen</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/c2.jpg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Cardiologist</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/c4.jpg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Urology</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/lab img.jpg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Determinology</p>
+                        </div>
+                        <div class="text-align:center" style="width: 100%;"><img class="Slid" src="img/c3.svg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">CT scan</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/c1.webp"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Surgen</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/c2.jpg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Cardiologist</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/c4.jpg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Urology</p>
+                        </div>
+                        <div style="width: 100%;"><img class="Slid" src="img/lab img.jpg"
+                                style="height: 100px; width: 100px;">
+                            <p class="our-p">Determinology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- crousel end  -->
+    <!-- our doctor section start here  -->
+
+    <section class="OurDoctors ">
+        <div class="container">
+            <div
+                style=" justify-content: center; display: flex; padding: 15px;  font-weight: 500;font-size: 35px;font-weight:500;">
+                Our Doctors</div>
+            <div class="row">
+                <div id="wrapper-our-doctor" class="wrapper text-align:center">
+                    <div class="cards">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/lab img.jpg" class="card-img-top" alt="..."
+                                style="padding: 10px; border: none;">
+                            <div class="card-body">
+                                <h5 class="card-title cctitle">Dolly Bhati</h5>
+                                <p class="card-text2">MBBS -Dermanology</p>
+                                <p class="card-text2">Experience -0 years</p>
+                                <p class="card-text2">Ex-cort,faridabad,Haryana</p>
+                                <a href="#" class="btn btn-primary"
+                                    style="padding: 5px 70px; color: #2B65AA; background-color: white;">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our doctors sec end  -->
+
+    <!-- our clinic sec start  -->
+    <section class="OurClinic">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="imgclinic" src="img/our clinic.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div>
+                        <h2 class="clinic-h2">Availabe Features in Our Clinic
+                        </h2>
+                    </div>
+                    <div class="wrapper">
+                        <div class="slick-carousel carousel2">
+                            <div class="slick">
+                                <img class="Slid" src="img/c3.svg" style="width: 100px;height: 100px;">
+                                <p>CT scan</p>
+                            </div>
+                            <div class="slick">
+                                <img class="Slid" src="img/c1.webp" style="width: 100px;height: 100px;">
+                                <p>Surgen</p>
+                            </div>
+                            <div class="slick"><img class="Slid" src="img/c2.jpg" style="width: 100px;height: 100px;">
+                                <p>Cardiologist</p>
+                            </div>
+                            <div class="slick">
+                                <img class="Slid" src="img/c4.jpg" style="width: 100px;height: 100px;">
+                                <p>Urology</p>
+                            </div>
+                            <div class="slick"><img class="Slid" src="img/lab img.jpg"
+                                    style="width: 100px;height: 100px;">
+                                <p>Determinology </p>
+                            </div>
+                            <div class="slick"><img class="Slid" src="img/c3.svg" style="width: 100px;height: 100px;">
+                                <p>CT scan</p>
+                            </div>
+                            <div class="slick">
+                                <img class="Slid" src="img/c1.webp" style="width: 100px;height: 100px;">
+                                <p>Surgen</p>
+                            </div>
+                            <div class="slick"><img class="Slid" src="img/c2.jpg" style="width: 100px;height: 100px;">
+                                <p>Cardiologist</p>
+                            </div>
+                            <div class="slick"><img class="Slid" src="img/c4.jpg" style="width: 100px;height: 100px;">
+                                <p>Urology</p>
+                            </div>
+                            <div class="slick"><img class="Slid" src="img/lab img.jpg"
+                                    style="width: 100px;height: 100px;">
+                                <p>Determinology</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- our clinic sec end  -->
+
+    <!-- Blog and news sec start here  -->
+
+    <section class="blog">
+        <div class="container">
+            <div>
+                <h1 style="display: flex; justify-content: center; font-weight: 600;padding: 15px;">Blogs and News</h1>
+            </div>
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/lab img.jpg" class="card-img-top" alt="..." style="padding: 10px; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title">Benefit of consulting online doctors?</h5>
+                            <p class="card-text3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.Some quick example text to build on the card title and make
+                                up the bulk of the card's contentSome quick example text to build </p>
+                            <a href="#" class="btn btn-primary"
+                                style="    padding: 8px 45px;  color: white; background-color: #0d6efd; font-size: 17px">View
+                                Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/lab img.jpg" class="card-img-top" alt="..." style="padding: 10px; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title">Benefit of consulting online doctors?</h5>
+                            <p class="card-text3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.Some quick example text to build on the card title and make
+                                up the bulk of the card's contentSome quick example text to build </p>
+                            <a href="#" class="btn btn-primary"
+                                style="    padding: 8px 45px; color: white; background-color: #0d6efd;  font-size: 17px; ">View
+                                Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/lab img.jpg" class="card-img-top" alt="..." style="padding: 10px; border: none;">
+                        <div class="card-body">
+                            <h5 class="card-title">Benefit of consulting online doctors?</h5>
+                            <p class="card-text3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.Some quick example text to build on the card title and make
+                                up the bulk of the card's contentSome quick example text to build </p>
+                            <a href="#" class="btn btn-primary"
+                                style=" padding: 8px 45px;  color: white;background-color: #0d6efd;  font-size: 17px; ">View
+                                Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blog and news section end here  -->
+
+
+    <!-- Footer start here  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="footerimg" src="img/logo.png" alt="">
+                    <p class="footer-p">Founded in 2023, JeevanHeal is an on-demand, digital primary healthcare
+                        platform which offers
+                        professional diagnostics and health check-up services that can be availed from the comfort of
+                        home, office, or even a spa.
+
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="footer-p2">For
+                        Patients</p>
+                    <ul style="list-style: none;">
+                        <li>Search for Doctors</li>
+                        <li>Bookoing</li>
+                        <li>Register</li>
+                        <li>Patient Dashboard</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p class="footer-p2">For Doctors
+                    </p>
+                    <ul style="list-style: none;">
+                        <li>Appointment</li>
+                        <li>login</li>
+                        <li>Register</li>
+                        <li>Doctor Profile</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p class="footer-p2">Quicl Link</p>
+                    <ul style="list-style: none;">
+                        <li>Labtest Register</li>
+                        <li>term abd condition</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p class="footer-p3">contact us</p>
+                    <p>Bagbera Barodaghat aadarsh society, jamshedpur, jharkhand, 831002, india.</p>
+                    <ul style="list-style: none;">
+                        <li>+91 9934211254</li>
+                        <li>Jeevanhealhelp@gmail.com</li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>© 2023 JeevanHeal. All rights reserved</p>
+                </div>
+                <div class="col-lg-6">
+                    <p style="text-align: end;">Terms and Conditions | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer end here  -->
+
+    <!-- JS start here  -->
+
+    <script>
+
+        // Slick version 1.5.8
+
+        $('.carousel').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.cards').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        $('.slick-carousel').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+    <!-- JS end here  -->
+
+
+</body>
+
+</html>
